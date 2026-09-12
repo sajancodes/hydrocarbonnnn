@@ -1,0 +1,10 @@
+{
+  "name": "HoloHydro - 3D AI Chemistry Game & Molecular Holograms",
+  "description": "An AI-powered 3D chemistry game and molecular simulator with hand-gesture controls, interactive 3D hydrocarbon builder, deterministic valence validation, and adaptive curriculum challenges.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

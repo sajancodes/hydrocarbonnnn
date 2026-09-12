@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HoloHydro - 3D AI Chemistry Game & Molecular Holograms</title>
+    <meta name="description" content="An AI-powered 3D chemistry game and molecular simulator with hand-gesture controls, interactive 3D hydrocarbon builder, deterministic valence validation, and adaptive curriculum challenges." />
+    <meta property="og:title" content="HoloHydro - 3D AI Chemistry Game & Molecular Holograms" />
+    <meta property="og:description" content="An AI-powered 3D chemistry game and molecular simulator with hand-gesture controls, interactive 3D hydrocarbon builder, deterministic valence validation, and adaptive curriculum challenges." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+      html, body, #root {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #020617 !important;
+        background: #020617 !important;
+        color: #00f3ff;
+        font-family: 'JetBrains Mono', monospace;
+        overflow: hidden;
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: rgba(2, 6, 23, 0.6);
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(6, 182, 212, 0.4);
+        border-radius: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: rgba(6, 182, 212, 0.8);
+      }
+      /* Custom scanline effect */
+      .scanlines {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba(2, 6, 23, 0) 50%,
+          rgba(0, 0, 0, 0.5) 50%
+        );
+        background-size: 100% 4px;
+        z-index: 50;
+        pointer-events: none;
+        opacity: 0.25;
+      }
+    </style>
+</head>
+  <body>
+    <div id="root"></div>
+    <div class="scanlines"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
